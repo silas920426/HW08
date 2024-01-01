@@ -44,6 +44,14 @@ namespace HW08
         private void DisplayAQIData()
         {
             RecordDataGrid.ItemsSource = records;
+
+            Record record = records[0];
+            DataWrapPanel.Children.Clear();
+
+            foreach (Field field in fields)
+            {
+
+            }
         }
 
         private async Task<string> FetchContentAsync(string url)
